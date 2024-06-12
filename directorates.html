@@ -48,6 +48,7 @@
 
     <main class="container mx-auto mt-8 mb-8 flex-grow">
         <div class="accordion" id="accordionExample">
+            <!-- Liturgical Directorate -->
             <div class="accordion-item mb-6 border border-gray-300 rounded-lg">
                 <h2 class="accordion-header">
                     <button class="accordion-button bg-gray-200 text-gray-800 font-bold rounded-t-lg focus:outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -57,35 +58,41 @@
                 <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                     <div class="accordion-body bg-gray-100 p-6 rounded-b-lg">
                         <strong>Executives:</strong>
-                        <ul class="list-disc list-inside mt-4 ml-4 mb-4">
-                            <li class="flex flex-col items-start mb-6">
-                                <div class="flex items-center mb-2">
-                                    <img src="images/President.jpg" alt="John Doe" class="w-12 h-12 rounded-full mr-4">
-                                    <span>John Doe - Director</span>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-4 mb-4">
+                            <!-- Executive Card -->
+                            <div class="bg-white p-4 rounded-lg shadow-md">
+                                <img src="images/President.jpg" alt="John Doe" class="w-24 h-24 rounded-full mx-auto mb-4">
+                                <div class="text-center">
+                                    <h3 class="text-lg font-semibold">John Doe</h3>
+                                    <p class="text-gray-600">Director</p>
                                 </div>
-                                <button class="bg-green-600 text-white px-2 py-1 rounded mt-2">View Profile</button>
-                            </li>
-                            <li class="flex flex-col items-start mb-6">
-                                <div class="flex items-center mb-2">
-                                    <img src="images/executive.jpeg" alt="Jane Smith" class="w-12 h-12 rounded-full mr-4">
-                                    <span>Jane Smith - Assistant Director</span>
+                                <button class="bg-green-600 text-white px-4 py-2 rounded mt-4 w-full">View Profile</button>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-md">
+                                <img src="images/executive.jpeg" alt="Jane Smith" class="w-24 h-24 rounded-full mx-auto mb-4">
+                                <div class="text-center">
+                                    <h3 class="text-lg font-semibold">Jane Smith</h3>
+                                    <p class="text-gray-600">Assistant Director</p>
                                 </div>
-                                <button class="bg-green-600 text-white px-2 py-1 rounded mt-2">View Profile</button>
-                            </li>
-                            <li class="flex flex-col items-start mb-6">
-                                <div class="flex items-center mb-2">
-                                    <img src="images/President.jpg" alt="Emily Davis" class="w-12 h-12 rounded-full mr-4">
-                                    <span>Emily Davis - Secretary</span>
+                                <button class="bg-green-600 text-white px-4 py-2 rounded mt-4 w-full">View Profile</button>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-md">
+                                <img src="images/President.jpg" alt="Emily Davis" class="w-24 h-24 rounded-full mx-auto mb-4">
+                                <div class="text-center">
+                                    <h3 class="text-lg font-semibold">Emily Davis</h3>
+                                    <p class="text-gray-600">Secretary</p>
                                 </div>
-                                <button class="bg-green-600 text-white px-2 py-1 rounded mt-2">View Profile</button>
-                            </li>
-                        </ul>
-                        <p class="mb-4 font-bold text-gray-700"><strong>Functions:</strong></p>
-                        <p class="mb-4 text-gray-600 text-xl">The Liturgical Directorate is responsible for organizing and coordinating liturgical events and activities. This includes planning and executing religious ceremonies, overseeing the liturgical calendar, and ensuring the proper conduct of worship services.</p>
-                        <button class="btn btn-danger mt-3">Join Liturgical Directorate</button>
+                                <button class="bg-green-600 text-white px-4 py-2 rounded mt-4 w-full">View Profile</button>
+                            </div>
+                            <!-- Add more executive cards as needed -->
+                        </div>
+                        <p class="mb-4 font-bold  bg-blue-300 text-black px-4 py-2 rounded-md mt-4 w-fit"><strong>Functions Of Liturgical Directorate:</strong></p>
+                        <p class="mb-4 text-gray-700 text-xl">The Liturgical Directorate is responsible for organizing and coordinating liturgical events and activities. This includes planning and executing religious ceremonies, overseeing the liturgical calendar, and ensuring the proper conduct of worship services.</p>
+                        <button class="btn btn-danger mt-3 join-btn"> Click here to Join Liturgical Directorate</button>
                     </div>
                 </div>
             </div>
+            <!-- Publicity Directorate -->
             <div class="accordion-item mb-6 border border-gray-300 rounded-lg">
                 <h2 class="accordion-header">
                     <button class="accordion-button bg-gray-200 text-gray-800 font-bold rounded-t-lg focus:outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -95,135 +102,153 @@
                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body bg-gray-100 p-6 rounded-b-lg">
                         <strong>Executives:</strong>
-                        <ul class="list-disc list-inside mt-4 ml-4 mb-4">
-                            <li class="flex flex-col items-start mb-6">
-                                <div class="flex items-center mb-2">
-                                    <img src="images/executive.jpeg" alt="Mark Johnson" class="w-12 h-12 rounded-full mr-4">
-                                    <span>Mark Johnson - Director</span>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-4 mb-4">
+                            <!-- Executive Card -->
+                            <div class="bg-white p-4 rounded-lg shadow-md">
+                                <img src="images/executive.jpeg" alt="Mark Johnson" class="w-24 h-24 rounded-full mx-auto mb-4">
+                                <div class="text-center">
+                                    <h3 class="text-lg font-semibold">Mark Johnson</h3>
+                                    <p class="text-gray-600">Director</p>
                                 </div>
-                                <button class="bg-green-600 text-white px-2 py-1 rounded mt-2">View Profile</button>
-                            </li>
-                            <li class="flex flex-col items-start mb-6">
-                                <div class="flex items-center mb-2">
-                                    <img src="images/President.jpg" alt="Anna Brown" class="w-12 h-12 rounded-full mr-4">
-                                    <span>Anna Brown - Assistant Director</span>
+                                <button class="bg-green-600 text-white px-4 py-2 rounded mt-4 w-full">View Profile</button>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-md">
+                                <img src="images/President.jpg" alt="Anna Brown" class="w-24 h-24 rounded-full mx-auto mb-4">
+                                <div class="text-center">
+                                    <h3 class="text-lg font-semibold">Anna Brown</h3>
+                                    <p class="text-gray-600">Assistant Director</p>
                                 </div>
-                                <button class="bg-green-600 text-white px-2 py-1 rounded mt-2">View Profile</button>
-                            </li>
-                            <li class="flex flex-col items-start mb-6">
-                                <div class="flex items-center mb-2">
-                                    <img src="images/executive.jpeg" alt="Michael Lee" class="w-12 h-12 rounded-full mr-4">
-                                    <span>Michael Lee - Secretary</span>
+                                <button class="bg-green-600 text-white px-4 py-2 rounded mt-4 w-full">View Profile</button>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-md">
+                                <img src="images/executive.jpeg" alt="Michael Williams" class="w-24 h-24 rounded-full mx-auto mb-4">
+                                <div class="text-center">
+                                    <h3 class="text-lg font-semibold">Michael Williams</h3>
+                                    <p class="text-gray-600">Secretary</p>
                                 </div>
-                                <button class="bg-green-600 text-white px-2 py-1 rounded mt-2">View Profile</button>
-                            </li>
-                        </ul>
-                        <p class="mb-4 font-bold text-gray-700"><strong>Functions:</strong></p>
-                        <p class="mb-4 text-gray-600 text-xl">The Publicity Directorate handles all public relations and communication efforts. This includes managing social media accounts, creating promotional materials, and coordinating with media outlets to ensure effective communication of the organization's mission and activities.</p>
-                        <button class="btn btn-danger mt-3">Join Publicity Directorate</button>
+                                <button class="bg-green-600 text-white px-4 py-2 rounded mt-4 w-full">View Profile</button>
+                            </div>
+                            <!-- Add more executive cards as needed -->
+                        </div>
+                        <p class="mb-4 font-bold  bg-blue-300 text-black px-4 py-2 rounded-md mt-4 w-fit"><strong>Functions Of Publicity Directorate:</strong></p>
+                        <p class="mb-4 text-gray-700 text-xl">The Publicity Directorate is responsible for managing the organization's public image, handling communications and public relations, and promoting events and activities through various media channels.</p>
+                        <button class="btn btn-danger mt-3 join-btn">Click here to Join Publicity Directorate</button>
                     </div>
                 </div>
             </div>
+            <!-- Welfare Directorate -->
             <div class="accordion-item mb-6 border border-gray-300 rounded-lg">
                 <h2 class="accordion-header">
                     <button class="accordion-button bg-gray-200 text-gray-800 font-bold rounded-t-lg focus:outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Socials Directorate
+                        Welfare Directorate
                     </button>
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body bg-gray-100 p-6 rounded-b-lg">
                         <strong>Executives:</strong>
-                        <ul class="list-disc list-inside mt-4 ml-4 mb-4">
-                            <li class="flex flex-col items-start mb-6">
-                                <div class="flex items-center mb-2">
-                                    <img src="images/executive.jpeg" alt="Susan Clark" class="w-12 h-12 rounded-full mr-4">
-                                    <span>Susan Clark - Director</span>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-4 mb-4">
+                            <!-- Executive Card -->
+                            <div class="bg-white p-4 rounded-lg shadow-md">
+                                <img src="images/executive.jpeg" alt="Sara Lee" class="w-24 h-24 rounded-full mx-auto mb-4">
+                                <div class="text-center">
+                                    <h3 class="text-lg font-semibold">Sara Lee</h3>
+                                    <p class="text-gray-600">Director</p>
                                 </div>
-                                <button class="bg-green-600 text-white px-2 py-1 rounded mt-2">View Profile</button>
-                            </li>
-                            <li class="flex flex-col items-start mb-6">
-                                <div class="flex items-center mb-2">
-                                    <img src="images/executive.jpeg" alt="James Wilson" class="w-12 h-12 rounded-full mr-4">
-                                    <span>James Wilson - Assistant Director</span>
+                                <button class="bg-green-600 text-white px-4 py-2 rounded mt-4 w-full">View Profile</button>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-md">
+                                <img src="images/President.jpg" alt="David Kim" class="w-24 h-24 rounded-full mx-auto mb-4">
+                                <div class="text-center">
+                                    <h3 class="text-lg font-semibold">David Kim</h3>
+                                    <p class="text-gray-600">Assistant Director</p>
                                 </div>
-                                <button class="bg-green-600 text-white px-2 py-1 rounded mt-2">View Profile</button>
-                            </li>
-                            <li class="flex flex-col items-start mb-6">
-                                <div class="flex items-center mb-2">
-                                    <img src="images/President.jpg" alt="Linda Martinez" class="w-12 h-12 rounded-full mr-4">
-                                    <span>Linda Martinez - Secretary</span>
+                                <button class="bg-green-600 text-white px-4 py-2 rounded mt-4 w-full">View Profile</button>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-md">
+                                <img src="images/executive.jpeg" alt="Linda Evans" class="w-24 h-24 rounded-full mx-auto mb-4">
+                                <div class="text-center">
+                                    <h3 class="text-lg font-semibold">Linda Evans</h3>
+                                    <p class="text-gray-600">Secretary</p>
                                 </div>
-                                <button class="bg-green-600 text-white px-2 py-1 rounded mt-2">View Profile</button>
-                            </li>
-                        </ul>
-                        <p class="mb-4 font-bold text-gray-700"><strong>Functions:</strong></p>
-                        <p class="mb-4 text-gray-600 text-xl">The Socials Directorate is in charge of planning and organizing social events and activities. This includes coordinating social gatherings, recreational activities, and community outreach programs to foster fellowship and community spirit among members.</p>
-                        <button class="btn btn-danger mt-3">Join Socials Directorate</button>
+                                <button class="bg-green-600 text-white px-4 py-2 rounded mt-4 w-full">View Profile</button>
+                            </div>
+                            <!-- Add more executive cards as needed -->
+                        </div>
+                        <p class="mb-4 font-bold  bg-blue-300 text-black px-4 py-2 rounded-md mt-4 w-fit"><strong>Functions Of Welfare Directorate:</strong></p>
+                        <p class="mb-4 text-gray-700 text-xl">The Welfare Directorate is responsible for the social and physical well-being of members. This includes organizing support programs, coordinating welfare activities, and ensuring the welfare needs of members are met.</p>
+                        <button class="btn btn-danger mt-3 join-btn">Click here to Join Welfare Directorate</button>
                     </div>
                 </div>
             </div>
+            <!-- Professional Developement Directorate -->
             <div class="accordion-item mb-6 border border-gray-300 rounded-lg">
                 <h2 class="accordion-header">
-                    <button class="accordion-button bg-gray-200 text-gray-800 font-bold rounded-t-lg focus:outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        Professional Development Directorate
+                    <button class="accordion-button bg-gray-200 text-gray-800 font-bold rounded-t-lg focus:outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Professional Developement Directorate
                     </button>
                 </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body bg-gray-100 p-6 rounded-b-lg">
                         <strong>Executives:</strong>
-                        <ul class="list-disc list-inside mt-4 ml-4 mb-4">
-                            <li class="flex flex-col items-start mb-6">
-                                <div class="flex items-center mb-2">
-                                    <img src="images/President.jpg" alt="Robert White" class="w-12 h-12 rounded-full mr-4">
-                                    <span>Robert White - Director</span>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-4 mb-4">
+                            <!-- Executive Card -->
+                            <div class="bg-white p-4 rounded-lg shadow-md">
+                                <img src="images/executive.jpeg" alt="Sara Lee" class="w-24 h-24 rounded-full mx-auto mb-4">
+                                <div class="text-center">
+                                    <h3 class="text-lg font-semibold">Sara Lee</h3>
+                                    <p class="text-gray-600">Director</p>
                                 </div>
-                                <button class="bg-green-600 text-white px-2 py-1 rounded mt-2">View Profile</button>
-                            </li>
-                            <li class="flex flex-col items-start mb-6">
-                                <div class="flex items-center mb-2">
-                                    <img src="images/executive.jpeg" alt="Patricia Harris" class="w-12 h-12 rounded-full mr-4">
-                                    <span>Patricia Harris - Assistant Director</span>
+                                <button class="bg-green-600 text-white px-4 py-2 rounded mt-4 w-full">View Profile</button>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-md">
+                                <img src="images/President.jpg" alt="David Kim" class="w-24 h-24 rounded-full mx-auto mb-4">
+                                <div class="text-center">
+                                    <h3 class="text-lg font-semibold">David Kim</h3>
+                                    <p class="text-gray-600">Assistant Director</p>
                                 </div>
-                                <button class="bg-green-600 text-white px-2 py-1 rounded mt-2">View Profile</button>
-                            </li>
-                            <li class="flex flex-col items-start mb-6">
-                                <div class="flex items-center mb-2">
-                                    <img src="images/President.jpg" alt="Charles Clark" class="w-12 h-12 rounded-full mr-4">
-                                    <span>Charles Clark - Secretary</span>
+                                <button class="bg-green-600 text-white px-4 py-2 rounded mt-4 w-full">View Profile</button>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-md">
+                                <img src="images/executive.jpeg" alt="Linda Evans" class="w-24 h-24 rounded-full mx-auto mb-4">
+                                <div class="text-center">
+                                    <h3 class="text-lg font-semibold">Linda Evans</h3>
+                                    <p class="text-gray-600">Secretary</p>
                                 </div>
-                                <button class="bg-green-600 text-white px-2 py-1 rounded mt-2">View Profile</button>
-                            </li>
-                        </ul>
-                        <p class="mb-4 font-bold text-gray-700"><strong>Functions:</strong></p>
-                        <p class="mb-4 text-gray-600 text-xl">The Professional Development Directorate focuses on the personal and professional growth of members. This includes organizing workshops, seminars, and training sessions to enhance skills, knowledge, and career development opportunities.</p>
-                        <button class="btn btn-danger mt-3">Join Professional Development Directorate</button>
+                                <button class="bg-green-600 text-white px-4 py-2 rounded mt-4 w-full">View Profile</button>
+                            </div>
+                            <!-- Add more executive cards as needed -->
+                        </div>
+                        <p class="mb-4 font-bold  bg-blue-300 text-black px-4 py-2 rounded-md mt-4 w-fit"><strong>Functions of Professional Development Directorate:</strong></p>
+                        <p class="mb-4 text-gray-700 text-xl">The Professional Development Directorate focuses on the personal and professional growth of members. This includes organizing workshops, seminars, and training sessions to enhance skills, knowledge, and career development opportunities.</p>
+                        <button class="btn btn-danger mt-3 join-btn">Click here to Join Professional Development Directorate</button>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer class="bg-gray-800 text-white py-4 mt-auto">
+    <footer class="bg-gray-800 text-white py-4">
         <div class="container mx-auto text-center">
-            <p>&copy; 2024 Young Catholic Professionals. All rights reserved.</p>
-            <p><a href="#" class="text-blue-400">Privacy Policy</a> | <a href="#" class="text-blue-400">Terms of Service</a></p>
-            <p>Follow us on: 
-                <a href="#" class="text-blue-400">Facebook</a>, 
-                <a href="#" class="text-blue-400">Twitter</a>, 
-                <a href="#" class="text-blue-400">Instagram</a>
-            </p>
+            &copy; 2024 Young Catholic Professionals. All rights reserved.
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script>
-        // Toggle navigation menu for small screens
-        const menuBtn = document.querySelector('#menuBtn');
-        const mobileMenu = document.querySelector('#mobileMenu');
-
-        menuBtn.addEventListener('click', () => {
+        // Mobile menu toggle
+        document.getElementById('menuBtn').addEventListener('click', function () {
+            var mobileMenu = document.getElementById('mobileMenu');
             mobileMenu.classList.toggle('hidden');
+        });
+
+        // Join button prompt
+        document.querySelectorAll('.join-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                if (confirm("Do you want to join this directorate?")) {
+                    alert("You have joined this directorate!");
+                }
+            });
         });
     </script>
 </body>
