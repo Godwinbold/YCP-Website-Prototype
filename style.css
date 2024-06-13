@@ -14,7 +14,7 @@ body, html {
 
 .index-page {
     min-height: 100vh;
-    background-image: linear-gradient(rgb(0,0,0,0.40),rgb(0,0,0,0.60)), url('images/Home-Image.jpg'); /* Adjust the path as necessary */
+    background-image: linear-gradient(rgb(0,0,0,0.40),rgb(0,0,0,0.60)), url('images/Home-Image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -32,17 +32,17 @@ body, html {
 }
 
 .navbar {
-    position: absolute; /* Ensure the nav starts from the top */
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px; /* Increase the nav height */
-    background: rgba(0, 0, 0, 0.3); /* Optional: Add a semi-transparent background */
+    height: 100px; 
+    background: rgba(0, 0, 0, 0.3); 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; /* Optional: Adjust padding */
-    z-index: 1000; /* Ensure the nav stays on top */
+    padding: 0 20px; 
+    z-index: 1000; 
 }
 
 /* .navbar h1 {
