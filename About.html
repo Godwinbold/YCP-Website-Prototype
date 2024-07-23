@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Young Catholic Professionals</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Additional styles for smoother transitions */
+        .transition-transform {
+            transition: transform 0.3s ease;
+        }
+    </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
 
@@ -17,8 +23,8 @@
                     </a>
                     <h1 class="ml-4 text-2xl font-semibold">Young Catholic Professionals</h1>
                 </div>
-                <ul class="hidden md:flex space-x-4">
-                    <!-- <li><a class="text-gray-700 hover:text-blue-500" href="aboutUs.html">About Us</a></li> -->
+                <ul id="menu" class="hidden md:flex space-x-4">
+                    <li><a class="text-gray-700 hover:text-blue-500" href="aboutUs.html">About Us</a></li>
                     <li><a class="text-gray-700 hover:text-blue-500" href="directorates.html">Directorates</a></li>
                     <li><a class="text-gray-700 hover:text-blue-500" href="projects.html">Projects</a></li>
                     <li><a class="text-gray-700 hover:text-blue-500" href="contactUs.html">Contact Us</a></li>
@@ -34,50 +40,40 @@
         </div>
     </section>
 
-   
     <div class="max-w-7xl mx-auto p-6">
-      
         <header class="text-center py-10">
             <h1 class="text-4xl font-bold text-blue-900">Young Catholic Professionals</h1>
             <p class="text-lg mt-4">Empowering and Inspiring the Next Generation of Catholic Leaders</p>
         </header>
 
-       
         <section class="mb-10">
             <h2 class="text-2xl font-semibold text-blue-800 mb-4">About Us</h2>
             <p class="text-lg leading-relaxed">We are a community of young Catholic professionals dedicated to empowering and inspiring the next generation of Catholic leaders. Our mission is to foster a culture of virtue and excellence, helping young adults connect their faith with their professional lives.</p>
         </section>
 
-       
         <section>
             <h2 class="text-2xl font-semibold text-blue-800 mb-6">Our Activities</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                
                 <div class="bg-white rounded-lg shadow-md p-6">
                     <h3 class="text-xl font-semibold text-blue-700 mb-2">Networking Events</h3>
                     <p class="text-gray-600">Join us for regular networking events where you can connect with other young professionals and build meaningful relationships.</p>
                 </div>
-               
                 <div class="bg-white rounded-lg shadow-md p-6">
                     <h3 class="text-xl font-semibold text-blue-700 mb-2">Professional Development</h3>
                     <p class="text-gray-600">Participate in workshops and seminars aimed at developing your professional skills and enhancing your career growth.</p>
                 </div>
-                
                 <div class="bg-white rounded-lg shadow-md p-6">
                     <h3 class="text-xl font-semibold text-blue-700 mb-2">Spiritual Retreats</h3>
                     <p class="text-gray-600">Take part in spiritual retreats that offer a time of reflection, prayer, and growth in your faith journey.</p>
                 </div>
-                
                 <div class="bg-white rounded-lg shadow-md p-6">
                     <h3 class="text-xl font-semibold text-blue-700 mb-2">Community Service</h3>
                     <p class="text-gray-600">Engage in community service projects that make a positive impact on society and reflect our Catholic values.</p>
                 </div>
-                
                 <div class="bg-white rounded-lg shadow-md p-6">
                     <h3 class="text-xl font-semibold text-blue-700 mb-2">Faith Sharing Groups</h3>
                     <p class="text-gray-600">Join small groups for faith sharing and discussions, where you can grow spiritually with like-minded peers.</p>
                 </div>
-              
                 <div class="bg-white rounded-lg shadow-md p-6">
                     <h3 class="text-xl font-semibold text-blue-700 mb-2">Mentorship Programs</h3>
                     <p class="text-gray-600">Benefit from mentorship programs that connect you with experienced professionals who can guide you in your career and faith.</p>
@@ -85,6 +81,20 @@
             </div>
         </section>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuButton = document.getElementById('mobile-menu-button');
+            const menu = document.getElementById('menu');
+
+            menuButton.addEventListener('click', function () {
+                menu.classList.toggle('hidden');
+                menu.classList.toggle('transition-transform');
+                menu.classList.toggle('transform');
+                menu.classList.toggle('translate-x-full');
+            });
+        });
+    </script>
 
 </body>
 </html>
